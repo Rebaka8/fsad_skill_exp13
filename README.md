@@ -2,71 +2,56 @@
 
 ## 👤 Student Details
 
-**Name:** Rebaka Meda
-**Registration Number:2400032563
+**Name:** Rebekah Meda
+**Registration Number:** 2400032563
 
 ---
 
 ## 🎯 Aim
 
-To deploy a production-ready full-stack application using React for the frontend and Spring Boot for the backend, and to ensure proper integration between them.
+To deploy a production-ready full-stack application using React and Spring Boot.
 
 ---
 
-## 🧰 Prerequisites
-
-* Basic knowledge of Spring Boot
-* Understanding of React build process
-* Basic knowledge of deployment concepts
-
----
-
-## ⚙️ Tools & Technologies Used
+## 🧰 Tools Used
 
 * React.js
 * Spring Boot
-* Maven
-* Eclipse IDE
+* Eclipse
 * VS Code
+* Maven
 
 ---
 
-## 🚀 Procedure
-
-### 1. React Frontend Build
-
-* Created a React application using `create-react-app`
-* Installed dependencies using:
-
-  ```
-  npm install
-  ```
-* Generated production build:
-
-  ```
-  npm run build
-  ```
-* A `build/` folder was created containing optimized static files
+## 🚀 Procedure with Screenshots
 
 ---
 
-### 2. Spring Boot Backend Setup
+### 🔹 Step 1: React Build
 
-* Created Spring Boot project using Spring Starter (Eclipse)
-* Added dependency:
+Command used:
 
-  * Spring Web
+```
+npm run build
+```
+
+📸 Screenshot:
+![React Build](screenshots/react-build-successful.png)
 
 ---
 
-### 3. REST API Creation
+### 🔹 Step 2: Spring Boot Project Creation
 
-Created a controller:
+📸 Screenshot:
+![Spring Project](screenshots/spring-project.png)
+
+---
+
+### 🔹 Step 3: Controller Code
 
 ```java
 @RestController
 public class TestController {
-
     @GetMapping("/api/test")
     public String test() {
         return "Backend is working!";
@@ -74,74 +59,59 @@ public class TestController {
 }
 ```
 
----
-
-### 4. Integration of Frontend and Backend
-
-* Copied all files from:
-
-  ```
-  frontend/build/
-  ```
-* Pasted into:
-
-  ```
-  src/main/resources/static/
-  ```
-* This allowed Spring Boot to serve React frontend
+📸 Screenshot:
+![Controller](screenshots/controller.png)
 
 ---
 
-### 5. Running the Application
+### 🔹 Step 4: Backend Running
 
-* Ran Spring Boot application
-* Server started on:
-
-  ```
-  http://localhost:8080
-  ```
+📸 Screenshot:
+![Backend Running](screenshots/backend-running.png)
 
 ---
 
-### 6. Testing
+### 🔹 Step 5: API Output
 
-#### API Test:
+URL:
 
 ```
 http://localhost:8080/api/test
 ```
 
-✔ Output: Backend is working!
+📸 Screenshot:
+![API Output](screenshots/API-response-verified.png)
 
-#### Full Application:
+---
+
+### 🔹 Step 6: Static Folder Integration
+
+📸 Screenshot:
+![Static Folder](screenshots/static-folder-integration.png)
+
+---
+
+### 🔹 Step 7: Final Output
+
+URL:
 
 ```
 http://localhost:8080
 ```
 
-✔ React frontend loaded successfully
-✔ Backend data displayed on UI
-
----
-
-## 📸 Output
-
-* React build successful
-* Spring Boot server running
-* API response verified
-* Full-stack application successfully deployed
+📸 Screenshot:
+![Final Output](screenshots/full-stack-applicatio-successfully-deployed.png)
 
 ---
 
 ## ✅ Result
 
-The full-stack application was successfully deployed.
-The React frontend and Spring Boot backend were integrated and tested successfully.
+The full-stack application was successfully deployed and tested.
 
 ---
 
 ## 📌 Conclusion
 
-This experiment demonstrates how to deploy a full-stack application by combining React and Spring Boot, ensuring proper communication between frontend and backend in a production-like setup.
+Frontend and backend were integrated successfully using Spring Boot static deployment.
 
 ---
